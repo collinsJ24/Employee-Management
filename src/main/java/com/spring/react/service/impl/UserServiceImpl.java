@@ -19,7 +19,6 @@ public class UserServiceImpl implements UserService {
         UserEntity userEntity = new UserEntity();
         BeanUtils.copyProperties(user, userEntity);
         userEntity.setEncryptedPassword("test");
-        userEntity.setUserId("test");
         UserEntity storedUserDetails = userRepo.save(userEntity);
         userDTO returnedUser = new userDTO();
         BeanUtils.copyProperties(storedUserDetails, returnedUser);

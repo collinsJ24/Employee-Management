@@ -7,6 +7,7 @@ public class userRequestModelDetails {
     private String lastName;
     private String email;
     private String password;
+    private String userId;
 
     public String getFirstName() {
         return firstName;
@@ -33,4 +34,10 @@ public class userRequestModelDetails {
         this.password = password;
     }
 
+    public String getUserId() {
+        return userId;
+    }
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 }
